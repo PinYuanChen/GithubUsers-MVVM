@@ -10,15 +10,8 @@
 		CE262DE9276233E400E432E2 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DE8276233E400E432E2 /* UserTableViewCell.swift */; };
 		CE262DED27623E5400E432E2 /* UserDetailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DEC27623E5400E432E2 /* UserDetailAPI.swift */; };
 		CE262DF32762486300E432E2 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DF22762486300E432E2 /* UserDetailViewModel.swift */; };
-		CE262DF72762493A00E432E2 /* UserDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DF62762493A00E432E2 /* UserDetailCoordinator.swift */; };
 		CE262DFB2762496400E432E2 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DFA2762496400E432E2 /* UserDetailViewController.swift */; };
 		CE262DFF27624F0B00E432E2 /* IconInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DFE27624F0B00E432E2 /* IconInfoView.swift */; };
-		CE34F6542760DA01002E2F16 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6512760DA01002E2F16 /* AppCoordinator.swift */; };
-		CE34F6552760DA01002E2F16 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6522760DA01002E2F16 /* Coordinator.swift */; };
-		CE34F6562760DA01002E2F16 /* CoordinatorPrototype.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6532760DA01002E2F16 /* CoordinatorPrototype.swift */; };
-		CE34F6592760DB24002E2F16 /* MainTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6582760DB24002E2F16 /* MainTabBarCoordinator.swift */; };
-		CE34F65D2760F0E3002E2F16 /* UserListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F65C2760F0E3002E2F16 /* UserListCoordinator.swift */; };
-		CE34F6602760F10B002E2F16 /* PersonalInfoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F65F2760F10B002E2F16 /* PersonalInfoCoordinator.swift */; };
 		CE34F6632760FAEA002E2F16 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6622760FAEA002E2F16 /* PersonalInfoViewController.swift */; };
 		CE34F6662760FAFF002E2F16 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6652760FAFF002E2F16 /* UserListViewController.swift */; };
 		CE34F66A2760FB2C002E2F16 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6692760FB2C002E2F16 /* UserListViewModel.swift */; };
@@ -52,15 +45,8 @@
 		CE262DE8276233E400E432E2 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		CE262DEC27623E5400E432E2 /* UserDetailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailAPI.swift; sourceTree = "<group>"; };
 		CE262DF22762486300E432E2 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
-		CE262DF62762493A00E432E2 /* UserDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCoordinator.swift; sourceTree = "<group>"; };
 		CE262DFA2762496400E432E2 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		CE262DFE27624F0B00E432E2 /* IconInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInfoView.swift; sourceTree = "<group>"; };
-		CE34F6512760DA01002E2F16 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		CE34F6522760DA01002E2F16 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		CE34F6532760DA01002E2F16 /* CoordinatorPrototype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoordinatorPrototype.swift; sourceTree = "<group>"; };
-		CE34F6582760DB24002E2F16 /* MainTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarCoordinator.swift; sourceTree = "<group>"; };
-		CE34F65C2760F0E3002E2F16 /* UserListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCoordinator.swift; sourceTree = "<group>"; };
-		CE34F65F2760F10B002E2F16 /* PersonalInfoCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoCoordinator.swift; sourceTree = "<group>"; };
 		CE34F6622760FAEA002E2F16 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		CE34F6652760FAFF002E2F16 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		CE34F6692760FB2C002E2F16 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
@@ -215,8 +201,6 @@
 				CE6FFDC5275F4C0100B78A41 /* Info.plist */,
 				CE262E022762552E00E432E2 /* Utilities */,
 				CE34F6682760FB17002E2F16 /* ViewModels */,
-				CE6FFE0A2760620B00B78A41 /* Coordinators */,
-				CE34F6582760DB24002E2F16 /* MainTabBarCoordinator.swift */,
 				CE6FFE042760611800B78A41 /* Views */,
 				CE6FFDF3275FBC2700B78A41 /* Models */,
 				CE34F65B2760E888002E2F16 /* Resource */,
@@ -263,43 +247,6 @@
 				CE172C5427626CBB00A5039D /* PersonalInfo */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		CE6FFE0A2760620B00B78A41 /* Coordinators */ = {
-			isa = PBXGroup;
-			children = (
-				CE9A7F7327630E78003E4800 /* UserList */,
-				CE9A7F7527630EB2003E4800 /* PersonalInfo */,
-				CE9A7F7427630E9C003E4800 /* BaseCoordinator */,
-			);
-			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		CE9A7F7327630E78003E4800 /* UserList */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F65C2760F0E3002E2F16 /* UserListCoordinator.swift */,
-				CE262DF62762493A00E432E2 /* UserDetailCoordinator.swift */,
-			);
-			path = UserList;
-			sourceTree = "<group>";
-		};
-		CE9A7F7427630E9C003E4800 /* BaseCoordinator */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F6512760DA01002E2F16 /* AppCoordinator.swift */,
-				CE34F6522760DA01002E2F16 /* Coordinator.swift */,
-				CE34F6532760DA01002E2F16 /* CoordinatorPrototype.swift */,
-			);
-			path = BaseCoordinator;
-			sourceTree = "<group>";
-		};
-		CE9A7F7527630EB2003E4800 /* PersonalInfo */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F65F2760F10B002E2F16 /* PersonalInfoCoordinator.swift */,
-			);
-			path = PersonalInfo;
 			sourceTree = "<group>";
 		};
 		CEB208D62761D034000C6271 /* Extensions */ = {
@@ -396,7 +343,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE34F6542760DA01002E2F16 /* AppCoordinator.swift in Sources */,
 				CE262DE9276233E400E432E2 /* UserTableViewCell.swift in Sources */,
 				CE262DED27623E5400E432E2 /* UserDetailAPI.swift in Sources */,
 				CE34F66A2760FB2C002E2F16 /* UserListViewModel.swift in Sources */,
@@ -410,19 +356,13 @@
 				CE262DFB2762496400E432E2 /* UserDetailViewController.swift in Sources */,
 				CE262DFF27624F0B00E432E2 /* IconInfoView.swift in Sources */,
 				CEB208D82761D065000C6271 /* Cell+Exts.swift in Sources */,
-				CE34F6562760DA01002E2F16 /* CoordinatorPrototype.swift in Sources */,
 				CE6FFDBA275F4BFF00B78A41 /* SceneDelegate.swift in Sources */,
 				CE6FFDE8275FBAC400B78A41 /* ResponseError.swift in Sources */,
 				CE34F67127610869002E2F16 /* UserModel.swift in Sources */,
-				CE34F6592760DB24002E2F16 /* MainTabBarCoordinator.swift in Sources */,
-				CE34F6552760DA01002E2F16 /* Coordinator.swift in Sources */,
 				CE34F66E2760FB3A002E2F16 /* PersonalInfoViewModel.swift in Sources */,
 				CE6FFDE7275FBAC400B78A41 /* APIBase.swift in Sources */,
-				CE34F6602760F10B002E2F16 /* PersonalInfoCoordinator.swift in Sources */,
-				CE34F65D2760F0E3002E2F16 /* UserListCoordinator.swift in Sources */,
 				CE262DF32762486300E432E2 /* UserDetailViewModel.swift in Sources */,
 				CE6FFDE6275FBAC400B78A41 /* TATargetType.swift in Sources */,
-				CE262DF72762493A00E432E2 /* UserDetailCoordinator.swift in Sources */,
 				CE6FFDF5275FBC5900B78A41 /* PersonalInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
