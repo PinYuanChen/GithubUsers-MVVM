@@ -12,10 +12,8 @@
 		CE262DF32762486300E432E2 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DF22762486300E432E2 /* UserDetailViewModel.swift */; };
 		CE262DFB2762496400E432E2 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DFA2762496400E432E2 /* UserDetailViewController.swift */; };
 		CE262DFF27624F0B00E432E2 /* IconInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DFE27624F0B00E432E2 /* IconInfoView.swift */; };
-		CE34F6632760FAEA002E2F16 /* PersonalInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6622760FAEA002E2F16 /* PersonalInfoViewController.swift */; };
 		CE34F6662760FAFF002E2F16 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6652760FAFF002E2F16 /* UserListViewController.swift */; };
 		CE34F66A2760FB2C002E2F16 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F6692760FB2C002E2F16 /* UserListViewModel.swift */; };
-		CE34F66E2760FB3A002E2F16 /* PersonalInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F66D2760FB3A002E2F16 /* PersonalInfoViewModel.swift */; };
 		CE34F67127610869002E2F16 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE34F67027610869002E2F16 /* UserModel.swift */; };
 		CE6FFDB8275F4BFF00B78A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDB7275F4BFF00B78A41 /* AppDelegate.swift */; };
 		CE6FFDBA275F4BFF00B78A41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDB9275F4BFF00B78A41 /* SceneDelegate.swift */; };
@@ -35,7 +33,6 @@
 		CE6FFDE8275FBAC400B78A41 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDE4275FBAC400B78A41 /* ResponseError.swift */; };
 		CE6FFDE9275FBAC400B78A41 /* Decision.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDE5275FBAC400B78A41 /* Decision.swift */; };
 		CE6FFDED275FBAE900B78A41 /* UserListAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDEC275FBAE900B78A41 /* UserListAPI.swift */; };
-		CE6FFDF1275FBB0100B78A41 /* PersonalInfoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDF0275FBB0100B78A41 /* PersonalInfoAPI.swift */; };
 		CE6FFDF5275FBC5900B78A41 /* PersonalInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6FFDF4275FBC5900B78A41 /* PersonalInfoModel.swift */; };
 		CEB208D42761CC20000C6271 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CEB208D32761CC20000C6271 /* Kingfisher */; };
 		CEB208D82761D065000C6271 /* Cell+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB208D72761D065000C6271 /* Cell+Exts.swift */; };
@@ -47,10 +44,8 @@
 		CE262DF22762486300E432E2 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
 		CE262DFA2762496400E432E2 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 		CE262DFE27624F0B00E432E2 /* IconInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconInfoView.swift; sourceTree = "<group>"; };
-		CE34F6622760FAEA002E2F16 /* PersonalInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewController.swift; sourceTree = "<group>"; };
 		CE34F6652760FAFF002E2F16 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		CE34F6692760FB2C002E2F16 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
-		CE34F66D2760FB3A002E2F16 /* PersonalInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoViewModel.swift; sourceTree = "<group>"; };
 		CE34F67027610869002E2F16 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		CE6FFDB4275F4BFF00B78A41 /* GithubUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6FFDB7275F4BFF00B78A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,7 +60,6 @@
 		CE6FFDE4275FBAC400B78A41 /* ResponseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
 		CE6FFDE5275FBAC400B78A41 /* Decision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Decision.swift; sourceTree = "<group>"; };
 		CE6FFDEC275FBAE900B78A41 /* UserListAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListAPI.swift; sourceTree = "<group>"; };
-		CE6FFDF0275FBB0100B78A41 /* PersonalInfoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoAPI.swift; sourceTree = "<group>"; };
 		CE6FFDF4275FBC5900B78A41 /* PersonalInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalInfoModel.swift; sourceTree = "<group>"; };
 		CEB208D72761D065000C6271 /* Cell+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Exts.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,14 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		CE172C5427626CBB00A5039D /* PersonalInfo */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F6622760FAEA002E2F16 /* PersonalInfoViewController.swift */,
-			);
-			path = PersonalInfo;
-			sourceTree = "<group>";
-		};
 		CE262DE7276233CD00E432E2 /* UserList */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,14 +100,6 @@
 				CE34F6692760FB2C002E2F16 /* UserListViewModel.swift */,
 			);
 			path = UserList;
-			sourceTree = "<group>";
-		};
-		CE262DF02762483A00E432E2 /* PersonalInfo */ = {
-			isa = PBXGroup;
-			children = (
-				CE34F66D2760FB3A002E2F16 /* PersonalInfoViewModel.swift */,
-			);
-			path = PersonalInfo;
 			sourceTree = "<group>";
 		};
 		CE262DF12762484900E432E2 /* UserDetail */ = {
@@ -169,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				CE262DEF2762482900E432E2 /* UserList */,
-				CE262DF02762483A00E432E2 /* PersonalInfo */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -226,7 +203,6 @@
 			children = (
 				CE6FFDEC275FBAE900B78A41 /* UserListAPI.swift */,
 				CE262DEC27623E5400E432E2 /* UserDetailAPI.swift */,
-				CE6FFDF0275FBB0100B78A41 /* PersonalInfoAPI.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -244,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				CE262DE7276233CD00E432E2 /* UserList */,
-				CE172C5427626CBB00A5039D /* PersonalInfo */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -348,8 +323,6 @@
 				CE34F66A2760FB2C002E2F16 /* UserListViewModel.swift in Sources */,
 				CE6FFDBC275F4BFF00B78A41 /* ViewController.swift in Sources */,
 				CE6FFDED275FBAE900B78A41 /* UserListAPI.swift in Sources */,
-				CE6FFDF1275FBB0100B78A41 /* PersonalInfoAPI.swift in Sources */,
-				CE34F6632760FAEA002E2F16 /* PersonalInfoViewController.swift in Sources */,
 				CE34F6662760FAFF002E2F16 /* UserListViewController.swift in Sources */,
 				CE6FFDB8275F4BFF00B78A41 /* AppDelegate.swift in Sources */,
 				CE6FFDE9275FBAC400B78A41 /* Decision.swift in Sources */,
@@ -359,7 +332,6 @@
 				CE6FFDBA275F4BFF00B78A41 /* SceneDelegate.swift in Sources */,
 				CE6FFDE8275FBAC400B78A41 /* ResponseError.swift in Sources */,
 				CE34F67127610869002E2F16 /* UserModel.swift in Sources */,
-				CE34F66E2760FB3A002E2F16 /* PersonalInfoViewModel.swift in Sources */,
 				CE6FFDE7275FBAC400B78A41 /* APIBase.swift in Sources */,
 				CE262DF32762486300E432E2 /* UserDetailViewModel.swift in Sources */,
 				CE6FFDE6275FBAC400B78A41 /* TATargetType.swift in Sources */,
