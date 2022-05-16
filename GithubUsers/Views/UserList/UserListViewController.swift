@@ -118,7 +118,10 @@ private extension UserListViewController {
                 guard let self = self,
                       let username = self.userList[indexPath.row].login else { return }
                 self.tableView.deselectRow(at: indexPath, animated: true)
-                viewModel.input.showUserDetailInfo(username: username)
+                let vc = UserDetailViewController()
+                let vm = UserDetailViewModel(username: username, userDetailAPI: UserDetailAPI())
+                vc.viewModel = vm
+                self.present(vc, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)
     }

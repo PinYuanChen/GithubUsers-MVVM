@@ -151,10 +151,9 @@ private extension UserDetailViewController {
         closeButton
             .rx
             .tap
-            .subscribe(onNext: { [weak self] _ in
-                guard let self = self,
-                      let vm = self.viewModel else { return }
-                vm.input.dismiss()
+            .withUnretained(self)
+            .subscribe(onNext: { owner, _ in
+                owner.dismiss(animated: true)
             })
             .disposed(by: disposeBag)
         

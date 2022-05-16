@@ -9,37 +9,25 @@ import Foundation
 import RxSwift
 import RxCocoa
 
-// MARK: - Reaction
-
-enum UserListViewModelReaction {
-    case showUserDetail(username: String)
-    case changeTab
-}
-
-
 // MARK: - Prototype
 
-protocol UserListViewModelInput {
-    func showUserDetailInfo(username: String)
-    func changeSelectedTab()
-}
+protocol UserListViewModelInput { }
 
 protocol UserListViewModelOutput {
     var models: Observable<[UserModel]> { get }
 }
 
 protocol UserListViewModelPrototype {
-    var input: UserListViewModelInput { get }
+    
     var output: UserListViewModelOutput { get }
 }
 
 // MARK: - View model
 
 class UserListViewModel: UserListViewModelPrototype {
-
+    
     var input: UserListViewModelInput { self }
     var output: UserListViewModelOutput { self }
-    let reaction = PublishRelay<UserListViewModelReaction>()
 
     init(userListAPI: UserListAPIPrototype?) {
         
@@ -59,17 +47,7 @@ class UserListViewModel: UserListViewModelPrototype {
 
 // MARK: - Input & Output
 
-extension UserListViewModel: UserListViewModelInput {
-    
-    func showUserDetailInfo(username: String) {
-        self.reaction.accept(.showUserDetail(username: username))
-    }
-    
-    func changeSelectedTab() {
-        self.reaction.accept(.changeTab)
-    }
-    
-}
+extension UserListViewModel: UserListViewModelInput { }
 
 extension UserListViewModel: UserListViewModelOutput {
     
