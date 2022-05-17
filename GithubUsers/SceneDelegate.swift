@@ -17,10 +17,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             
             let window = UIWindow(windowScene: windowScene)
-            let navController = UINavigationController()
-            let viewController = UserListViewController()
             
-            navController.viewControllers = [viewController]
+            let vm = UserListViewModel(userListAPI: UserListAPI())
+            let vc = UserListViewController()
+            vc.viewModel = vm
+            
+            let navController = UINavigationController(rootViewController: vc)
             window.rootViewController = navController
             self.window = window
             window.makeKeyAndVisible()

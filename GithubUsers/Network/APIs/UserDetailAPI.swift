@@ -17,7 +17,7 @@ private struct RequestTargetType: TATargetType {
     var username: String
     
     var path: String {
-        username
+        "users/\(username)"
     }
 
     var method: Moya.Method {

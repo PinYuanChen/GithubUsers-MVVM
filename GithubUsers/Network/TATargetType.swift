@@ -21,7 +21,7 @@ protocol TATargetType: DecodableResponseTargetType {
 extension TATargetType {
 
     var baseURL: URL {
-        guard let url = URL(string: "https://api.github.com/users") else {
+        guard let url = URL(string: "https://api.github.com/") else {
             assert(false)
         }
         return url

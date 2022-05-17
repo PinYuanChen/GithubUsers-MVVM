@@ -15,7 +15,7 @@ private struct RequestTargetType: TATargetType {
     typealias ResponseType = [UserModel]
 
     var path: String {
-        ""
+        "users"
     }
 
     var method: Moya.Method {

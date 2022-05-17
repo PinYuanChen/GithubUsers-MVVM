@@ -24,9 +24,6 @@ class UserListViewController: UIViewController {
 
         setupUI()
         
-        let vm = UserListViewModel(userListAPI: UserListAPI())
-        viewModel = vm
-        
         guard let viewModel = viewModel else { return }
         bind(viewModel)
     }
