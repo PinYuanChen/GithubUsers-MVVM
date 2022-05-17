@@ -8,6 +8,7 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import SnapKit
 
 class UserDetailViewController: UIViewController {
 
@@ -58,7 +59,8 @@ private extension UserDetailViewController {
         view.addSubview(closeButton)
         closeButton.snp.makeConstraints {
             $0.size.equalTo(20)
-            $0.top.leading.equalToSuperview().offset(10)
+            $0.leading.equalToSuperview().offset(10)
+            $0.top.equalTo(view.safeAreaLayoutGuide).offset(10)
         }
         
         closeButton.setImage(UIImage(named: "close"), for: .normal)

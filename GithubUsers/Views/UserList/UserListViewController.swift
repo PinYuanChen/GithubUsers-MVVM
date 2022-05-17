@@ -33,6 +33,7 @@ class UserListViewController: UIViewController {
 
     // MARK: Private property
     
+    private lazy var searchController = UISearchController(searchResultsController: UserSearchResultViewController())
     private var userList = [UserModel]()
     private let tableView = UITableView()
     private let disposeBag = DisposeBag()
@@ -53,6 +54,10 @@ private extension UserListViewController {
         label.font = .boldSystemFont(ofSize: 20)
         label.textColor = .white
         navigationItem.leftBarButtonItem = .init(customView: label)
+        
+        searchController.searchBar.delegate = self
+        searchController.searchResultsUpdater = self
+        navigationItem.searchController = searchController
     }
     
     func configureTableView() {
@@ -94,6 +99,14 @@ extension UserListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// MARK: - Search Controller Delegate
+extension UserListViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        viewModel?.input.filterUser(text)
+    }
+}
+
 // MARK: - Binding
 
 private extension UserListViewController {
@@ -102,10 +115,22 @@ private extension UserListViewController {
         viewModel
             .output
             .models
-            .subscribe(onNext: { [weak self] models in
-                guard let self = self else { return }
-                self.userList = models
-                self.tableView.reloadData()
+            .withUnretained(self)
+            .subscribe(onNext: { owner, models in
+                owner.userList = models
+                owner.tableView.reloadData()
+            })
+            .disposed(by: disposeBag)
+        
+        viewModel
+            .output
+            .searchResult
+            .withUnretained(self)
+            .subscribe(onNext: { owner, searchResult in
+                guard let searchResultVC = owner.searchController.searchResultsController as? UserSearchResultViewController else {
+                    return
+                }
+                searchResultVC.searchList.accept(searchResult)
             })
             .disposed(by: disposeBag)
         
@@ -121,6 +146,7 @@ private extension UserListViewController {
                 let vc = UserDetailViewController()
                 let vm = UserDetailViewModel(username: username, userDetailAPI: UserDetailAPI())
                 vc.viewModel = vm
+                vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)
             })
             .disposed(by: disposeBag)

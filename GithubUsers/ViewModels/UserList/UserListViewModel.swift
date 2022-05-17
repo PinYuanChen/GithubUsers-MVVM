@@ -11,14 +11,17 @@ import RxCocoa
 
 // MARK: - Prototype
 
-protocol UserListViewModelInput { }
+protocol UserListViewModelInput {
+    func filterUser(_ name: String)
+}
 
 protocol UserListViewModelOutput {
     var models: Observable<[UserModel]> { get }
+    var searchResult: Observable<[UserModel]> { get }
 }
 
 protocol UserListViewModelPrototype {
-    
+    var input: UserListViewModelInput { get }
     var output: UserListViewModelOutput { get }
 }
 
@@ -42,17 +45,34 @@ class UserListViewModel: UserListViewModelPrototype {
     
     private let userListAPI: UserListAPIPrototype?
     private let userList = BehaviorRelay<[UserModel]>(value: [])
+    private let searchList = BehaviorRelay<[UserModel]>(value: [])
     private let disposeBag = DisposeBag()
 }
 
 // MARK: - Input & Output
 
-extension UserListViewModel: UserListViewModelInput { }
+extension UserListViewModel: UserListViewModelInput {
+    func filterUser(_ name: String) {
+        if name.count == 0 {
+            searchList.accept(userList.value)
+        } else {
+            let filterList = userList.value.filter {
+                guard let userName = $0.login else { return false }
+                return userName.uppercased().contains(name.uppercased())
+            }
+            searchList.accept(filterList)
+        }
+    }
+}
 
 extension UserListViewModel: UserListViewModelOutput {
     
     var models: Observable<[UserModel]> {
         userList.compactMap { $0 }.asObservable()
+    }
+    
+    var searchResult: Observable<[UserModel]> {
+        searchList.compactMap { $0 }.asObservable()
     }
 }
 

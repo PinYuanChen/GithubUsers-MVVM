@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD4ED709283352E800DDC229 /* UserSearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4ED708283352E800DDC229 /* UserSearchResultViewController.swift */; };
 		CE262DE9276233E400E432E2 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DE8276233E400E432E2 /* UserTableViewCell.swift */; };
 		CE262DED27623E5400E432E2 /* UserDetailAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DEC27623E5400E432E2 /* UserDetailAPI.swift */; };
 		CE262DF32762486300E432E2 /* UserDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE262DF22762486300E432E2 /* UserDetailViewModel.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD4ED708283352E800DDC229 /* UserSearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSearchResultViewController.swift; sourceTree = "<group>"; };
 		CE262DE8276233E400E432E2 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		CE262DEC27623E5400E432E2 /* UserDetailAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailAPI.swift; sourceTree = "<group>"; };
 		CE262DF22762486300E432E2 /* UserDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewModel.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				CE262DF92762494D00E432E2 /* UserDetail */,
 				CE34F6652760FAFF002E2F16 /* UserListViewController.swift */,
+				CD4ED708283352E800DDC229 /* UserSearchResultViewController.swift */,
 				CE262DE8276233E400E432E2 /* UserTableViewCell.swift */,
 			);
 			path = UserList;
@@ -326,6 +329,7 @@
 				CE34F6662760FAFF002E2F16 /* UserListViewController.swift in Sources */,
 				CE6FFDB8275F4BFF00B78A41 /* AppDelegate.swift in Sources */,
 				CE6FFDE9275FBAC400B78A41 /* Decision.swift in Sources */,
+				CD4ED709283352E800DDC229 /* UserSearchResultViewController.swift in Sources */,
 				CE262DFB2762496400E432E2 /* UserDetailViewController.swift in Sources */,
 				CE262DFF27624F0B00E432E2 /* IconInfoView.swift in Sources */,
 				CEB208D82761D065000C6271 /* Cell+Exts.swift in Sources */,
