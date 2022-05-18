@@ -73,7 +73,9 @@ extension UserSearchResultViewController {
                 [weak self] indexPath in
                 guard let self = self,
                       let username = self.searchList.value[indexPath.row].login else { return }
+                
                 self.tableView.deselectRow(at: indexPath, animated: true)
+                
                 let vc = UserDetailViewController()
                 let vm = UserDetailViewModel(username: username, userDetailAPI: UserDetailAPI())
                 vc.viewModel = vm

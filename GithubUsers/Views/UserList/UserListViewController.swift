@@ -30,7 +30,7 @@ class UserListViewController: UIViewController {
 
     // MARK: Private property
     
-    private lazy var searchController = UISearchController(searchResultsController: UserSearchResultViewController())
+    private let searchController = UISearchController(searchResultsController: UserSearchResultViewController())
     private var userList = [UserModel]()
     private let tableView = UITableView()
     private let disposeBag = DisposeBag()
@@ -139,7 +139,9 @@ private extension UserListViewController {
                 [weak self] indexPath in
                 guard let self = self,
                       let username = self.userList[indexPath.row].login else { return }
+                
                 self.tableView.deselectRow(at: indexPath, animated: true)
+                
                 let vc = UserDetailViewController()
                 let vm = UserDetailViewModel(username: username, userDetailAPI: UserDetailAPI())
                 vc.viewModel = vm

@@ -135,14 +135,14 @@ private extension UserDetailViewController {
         viewModel
             .output
             .userModel
-            .subscribe(onNext: { [weak self] model in
-                guard let self = self,
-                      let imgUrl = model.avatarURL else { return }
-                self.avatarImageView.kf.setImage(with: URL(string: imgUrl))
-                self.nameLabel.text = model.name
-                self.nameInfo.label.text = model.login
-                self.locationInfo.label.text = model.location
-                self.webInfo.label.text = model.url
+            .withUnretained(self)
+            .subscribe(onNext: { owner, model in
+                guard let imgUrl = model.avatarURL else { return }
+                owner.avatarImageView.kf.setImage(with: URL(string: imgUrl))
+                owner.nameLabel.text = model.name
+                owner.nameInfo.label.text = model.login
+                owner.locationInfo.label.text = model.location
+                owner.webInfo.label.text = model.url
             })
             .disposed(by: disposeBag)
         

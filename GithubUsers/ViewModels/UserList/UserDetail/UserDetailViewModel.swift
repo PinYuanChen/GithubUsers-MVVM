@@ -64,9 +64,9 @@ private extension UserDetailViewModel {
         
         userDetailAPI
             .result
-            .subscribe(onNext: { [weak self] model in
-                guard let self = self else { return }
-                self._userModel.accept(model)
+            .withUnretained(self)
+            .subscribe(onNext: { owner, model in
+                owner._userModel.accept(model)
             })
             .disposed(by: disposeBag)
         

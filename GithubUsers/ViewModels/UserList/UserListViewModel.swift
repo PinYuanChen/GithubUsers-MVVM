@@ -83,9 +83,9 @@ private extension UserListViewModel {
 
         userListAPI
             .result
-            .subscribe(onNext: { [weak self] list in
-                guard let self = self else { return }
-                self.userList.accept(list)
+            .withUnretained(self)
+            .subscribe(onNext: { owner, list in
+                owner.userList.accept(list)
             })
             .disposed(by: disposeBag)
         
